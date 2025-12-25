@@ -1,0 +1,15 @@
+NOTE: I Used this in a Proxmox LXC for jellyfin when my DB was locked and once when it was malformed. This wont fix all issues but it worked for me a few times
+
+CD into your dabase folder Default is /var/lib/jellyfin/data
+
+Step 1)Extract db
+
+> sqlite3 jellyfin.db ".dump" > data.sql
+
+Step2) Rename old db
+
+>mv jellyfin.db jellyfin2.db
+
+Step 3)Rebuild DB
+
+> sqlite3 jelltfin.db < data.sql
