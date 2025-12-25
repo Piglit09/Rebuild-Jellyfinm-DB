@@ -10,6 +10,8 @@ Step2) Rename old db
 
 >mv jellyfin.db jellyfin2.db
 
+Alternitivly you can use WinCP to tunnel into your host server and rename it that way
+
 Step 3)Rebuild DB
 
-> sqlite3 jelltfin.db < data.sql
+> sqlite3 jellyfin.db < data.sql
