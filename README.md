@@ -1,4 +1,7 @@
-NOTE: I Used this in a Proxmox LXC for jellyfin when my DB was locked and once when it was malformed. This wont fix all issues but it worked for me a few times
+Use these steps for
+SQLite Error 5: 'database is locked and SQLite Error 11: 'database disk image is malformed'
+
+NOTE: I Used this in a Proxmox LXC (deb) for jellyfin when my DB was locked and once when it was malformed. 
 
 CD into your dabase folder Default is /var/lib/jellyfin/data
 
